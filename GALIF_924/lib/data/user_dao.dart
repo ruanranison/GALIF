@@ -1,14 +1,9 @@
-
-
-import 'package:aula_924/data/db_helper.dart';
-import 'package:aula_924/domain/user.dart';
+import 'package:GALIF_924/data/db_helper.dart';
+import 'package:GALIF_924/domain/user.dart';
 import 'package:sqflite/sqflite.dart';
 
 class UserDao {
-
-
   listarUsers() async {
-
     DBHelper dbHelper = DBHelper();
     Database database = await dbHelper.initDB();
 
@@ -23,9 +18,9 @@ class UserDao {
     Database database = await dbHelper.initDB();
 
     String sql = "SELECT * "
-                  "FROM user "
-                  "WHERE username = ? "
-                  "AND password = ?";
+        "FROM user "
+        "WHERE username = ? "
+        "AND password = ?";
 
     var result = await database.rawQuery(sql, [user, password]);
 
@@ -38,5 +33,4 @@ class UserDao {
 
     await database.insert('user', user.toJson());
   }
-
 }

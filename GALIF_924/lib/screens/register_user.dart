@@ -1,6 +1,5 @@
-
-import 'package:aula_924/data/user_dao.dart';
-import 'package:aula_924/domain/user.dart';
+import 'package:GALIF_924/data/user_dao.dart';
+import 'package:GALIF_924/domain/user.dart';
 import 'package:flutter/material.dart';
 
 class RegisterUser extends StatefulWidget {
@@ -71,7 +70,7 @@ class _RegisterUserState extends State<RegisterUser> {
               ElevatedButton(
                 onPressed: onPressed,
                 style:
-                ElevatedButton.styleFrom(primary: const Color(0xFFE81F7C)),
+                    ElevatedButton.styleFrom(primary: const Color(0xFFF25305)),
                 child: const Padding(
                   padding: EdgeInsets.symmetric(vertical: 12.0),
                   child: Text(
@@ -94,13 +93,12 @@ class _RegisterUserState extends State<RegisterUser> {
       String userDigitado = userController.text;
       String passwordDigitado = passwordController.text;
 
-
       /// SALVAR USUARIO
-      User userCriado = User(username: userDigitado, password: passwordDigitado);
+      User userCriado =
+          User(username: userDigitado, password: passwordDigitado);
       await UserDao().salvarUser(user: userCriado);
       showSnackBar('Usuário foi salvo com sucesso!');
       Navigator.pop(context);
-
     } else {
       showSnackBar("Erro na validação");
     }

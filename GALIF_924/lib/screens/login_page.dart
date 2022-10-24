@@ -1,7 +1,6 @@
-
-import 'package:aula_924/data/user_dao.dart';
-import 'package:aula_924/screens/home_page.dart';
-import 'package:aula_924/screens/register_user.dart';
+import 'package:GALIF_924/data/user_dao.dart';
+import 'package:GALIF_924/screens/home_page.dart';
+import 'package:GALIF_924/screens/register_user.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
@@ -69,7 +68,7 @@ class _LoginPageState extends State<LoginPage> {
               ElevatedButton(
                 onPressed: onPressed,
                 style:
-                ElevatedButton.styleFrom(primary: const Color(0xFFE81F7C)),
+                    ElevatedButton.styleFrom(primary: const Color(0xFFF25305)),
                 child: const Padding(
                   padding: EdgeInsets.symmetric(vertical: 12.0),
                   child: Text(
@@ -83,14 +82,15 @@ class _LoginPageState extends State<LoginPage> {
               const SizedBox(height: 16),
               ElevatedButton(
                 onPressed: onPressedRegister,
-                style: ElevatedButton.styleFrom(backgroundColor: Colors.white),
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: const Color(0xFFF4DE9C)),
                 child: const Padding(
                   padding: EdgeInsets.symmetric(vertical: 12.0),
                   child: Text(
                     'Registrar Usuário',
                     style: TextStyle(
                       fontSize: 20,
-                      color: Color(0xFFE81F7C),
+                      color: Color(0xFFF25305),
                     ),
                   ),
                 ),
@@ -107,7 +107,8 @@ class _LoginPageState extends State<LoginPage> {
       String userDigitado = userController.text;
       String passwordDigitado = passwordController.text;
 
-      bool resultado = await UserDao().autenticar(userDigitado, passwordDigitado);
+      bool resultado =
+          await UserDao().autenticar(userDigitado, passwordDigitado);
 
       if (resultado) {
         Navigator.pushReplacement(
