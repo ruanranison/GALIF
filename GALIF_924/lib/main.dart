@@ -19,7 +19,7 @@ void main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: 'LoginBD',
+      initialRoute: 'Inicio',
       routes: {
         "Alimenta": (context) => const Alimenta(),
         "Cadastro": (context) => const Cadastro(),
