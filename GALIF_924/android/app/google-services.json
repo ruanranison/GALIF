@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "984881787772",
+    "project_id": "galif-924",
+    "storage_bucket": "galif-924.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:984881787772:android:ec059b93ec637867526af9",
+        "android_client_info": {
+          "package_name": "com.galif_924"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "984881787772-g3hkqnkgc86626t7ropc58l4lna2o6lt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCng3lcgImqx4kulhkPOTFtYEcQ0hFd6L4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "984881787772-g3hkqnkgc86626t7ropc58l4lna2o6lt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
