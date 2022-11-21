@@ -9,6 +9,7 @@ class UserDao {
 
     String sql = "SELECT * FROM user";
     var result = await database.rawQuery(sql);
+    User user = User.fromJson(result[0]);
 
     print(result);
   }

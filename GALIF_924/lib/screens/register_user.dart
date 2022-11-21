@@ -115,6 +115,4 @@ class _RegisterUserState extends State<RegisterUser> {
     );
     ScaffoldMessenger.of(context).showSnackBar(snackBar);
   }
-
-  onPressedRegister() {}
 }

@@ -1,7 +1,4 @@
-
-
-class User{
-
+class User {
   String? username;
   String? password;
 
@@ -13,11 +10,9 @@ class User{
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = <String, dynamic>{};
+    final Map<String, dynamic> data = {};
     data['username'] = username;
     data['password'] = password;
     return data;
   }
-
-
 }
